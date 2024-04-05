@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Exam Registration Portal</h1>
+    <div class="wrapper">
+        <div class="form-box register">
+            <h2>Registration</h2>
+            <form action="#" onsubmit="return checkMaxLimit()">
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="person-sharp"></ion-icon></span>
+                    <label>Name</label><br>
+                    <input type="text" name="name" required>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="mail-sharp"></ion-icon></span>
+                    <label>Email</label><br>
+                    <input type="email" name="email" required>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="school-sharp"></ion-icon></span>
+                    <label>IGCSE Level Subjects</label><br>
+                    <!-- Add checkboxes for IGCSE subjects -->
+                    <input type="checkbox" id="mat101" name="mat101" value="MAT-101" data-category="igcse">
+                    <label for="mat101">0580: Mathematics</label><br>
+                    <input type="checkbox" id="che101" name="che101" value="CHE-101" data-category="igcse">
+                    <label for="che101">0620: Chemistry</label><br>
+                    <input type="checkbox" id="eco101" name="eco101" value="ECO-101" data-category="igcse">
+                    <label for="eco101">0455: Economics</label><br>
+                    <input type="checkbox" id="wrl101" name="wrl101" value="WRL-101" data-category="igcse">
+                    <label for="wrl101">0408: World Literature</label><br>
+                    <!-- Add more checkboxes for other IGCSE subjects -->
+                </div>
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="school-sharp"></ion-icon></span>
+                    <label>A Level Subjects</label><br>
+                    <!-- Add checkboxes for AS subjects -->
+                    <input type="checkbox" id="bio101" name="bio101" value="BIO-101" data-category="as">
+                    <label for="bio101">9700: Biology</label><br>
+                    <input type="checkbox" id="eco101" name="eco101" value="ECO-101" data-category="as">
+                    <label for="eco101">9708: Economics</label><br>
+                    <input type="checkbox" id="comp101" name="comp101" value="COM-101" data-category="as">
+                    <label for="comp101">9618: Computer Science</label><br>
+                    <input type="checkbox" id="it101" name="it101" value="IT-101" data-category="as">
+                    <label for="it101">9626: Information Technology</label><br>
+                    <!-- Add more checkboxes for other AS subjects -->
+                </div>
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="school-sharp"></ion-icon></span>
+                    <label>A Level Subjects</label><br>
+                    <!-- Add checkboxes for A Level subjects -->
+                    <input type="checkbox" id="lit101" name="lit101" value="LIT-101" data-category="a">
+                    <label for="lit101">8695: English - Language & Literature</label><br>
+                    <input type="checkbox" id="fre101" name="fre101" value="FRE-101" data-category="a">
+                    <label for="fre101">8682: French Language</label><br>
+                    <input type="checkbox" id="spa101" name="spa101" value="SPA-101" data-category="a">
+                    <label for="spa101">8685: Spanish Language</label><br>
+                    <input type="checkbox" id="spo101" name="spo101" value="SPO-101" data-category="a">
+                    <label for="spo101">8386: Sports & Physical Education</label><br>
+                    <!-- Add more checkboxes for other A Level subjects -->
+                </div>
+                <button id="generateInvoiceBtn" type="submit" class="btn">Register</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="https://unpkg.com/jspdf-invoice-template@1.4.0/dist/index.js"></script>
+
+</body>
+</html>
